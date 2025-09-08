@@ -254,6 +254,7 @@ namespace DesafioAsenjo
             this.button2.TabIndex = 21;
             this.button2.Text = "Consultar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -275,6 +276,7 @@ namespace DesafioAsenjo
             this.button4.TabIndex = 23;
             this.button4.Text = "Atualizar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
