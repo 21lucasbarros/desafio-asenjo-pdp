@@ -429,14 +429,57 @@ namespace DesafioAsenjo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var pessoas = pessoaBLL.Listar();
-            string lista = "";
-            foreach (var p in pessoas)
+            try
             {
-                lista += $"{p.Id} - {p.Nome} ({p.Cidade}/{p.Estado})\n";
+                Form prompt = new Form()
+                {
+                    Width = 300,
+                    Height = 150,
+                    Text = "Consultar Pessoa",
+                    StartPosition = FormStartPosition.CenterParent
+                };
+
+                Label textLabel = new Label() { Left = 10, Top = 20, Text = "Informe o ID:", AutoSize = true };
+                TextBox inputBox = new TextBox() { Left = 10, Top = 50, Width = 260 };
+                Button confirmation = new Button() { Text = "Ok", Left = 100, Width = 80, Top = 80, DialogResult = DialogResult.OK };
+
+                confirmation.Click += (s, eArgs) => { prompt.Close(); };
+
+                prompt.Controls.Add(textLabel);
+                prompt.Controls.Add(inputBox);
+                prompt.Controls.Add(confirmation);
+                prompt.AcceptButton = confirmation;
+
+                if (prompt.ShowDialog() == DialogResult.OK)
+                {
+                    int id = int.Parse(inputBox.Text);
+                    var pessoa = pessoaBLL.ObterPorId(id);
+
+                    if (pessoa != null)
+                    {
+                        textBox1.Text = pessoa.Nome;
+                        textBox2.Text = pessoa.Telefone;
+                        textBox3.Text = pessoa.Email;
+                        textBox4.Text = pessoa.CEP;
+                        textBox5.Text = pessoa.Estado;
+                        textBox7.Text = pessoa.Cidade;
+                        textBox6.Text = pessoa.Bairro;
+                        textBox9.Text = pessoa.Rua;
+                        textBox8.Text = pessoa.Numero;
+                        textBox10.Text = pessoa.Complemento;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Pessoa não encontrada.");
+                    }
+                }
             }
-            MessageBox.Show(lista, "Lista de Pessoas");
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
 
         async private void textBox4_TextChanged(object sender, EventArgs e)
         {

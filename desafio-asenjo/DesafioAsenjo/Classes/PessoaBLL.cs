@@ -52,6 +52,15 @@ namespace DesafioAsenjo.Classes
             pessoaDAL.Atualizar(pessoa);
         }
 
+        public Pessoa ObterPorId(int id)
+        {
+            if (id <= 0)
+                throw new Exception("ID inválido para consulta.");
+
+            return pessoaDAL.ObterPorId(id);
+        }
+
+
         public void Deletar(int id)
         {
             if (id <= 0)

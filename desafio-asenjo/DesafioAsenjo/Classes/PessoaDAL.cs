@@ -92,6 +92,41 @@ namespace DesafioAsenjo.Classes
             }
         }
 
+        public Pessoa ObterPorId(int id)
+        {
+            using (OleDbConnection conn = new OleDbConnection(connString))
+            {
+                string sql = "SELECT * FROM Pessoa WHERE Id=@Id";
+                OleDbCommand cmd = new OleDbCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@Id", id);
+
+                conn.Open();
+                OleDbDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    return new Pessoa
+                    {
+                        Id = Convert.ToInt32(dr["Id"]),
+                        Nome = dr["Nome"].ToString(),
+                        Telefone = dr["Telefone"].ToString(),
+                        Email = dr["Email"].ToString(),
+                        CEP = dr["CEP"].ToString(),
+                        Estado = dr["Estado"].ToString(),
+                        Cidade = dr["Cidade"].ToString(),
+                        Bairro = dr["Bairro"].ToString(),
+                        Rua = dr["Rua"].ToString(),
+                        Numero = dr["Numero"].ToString(),
+                        Complemento = dr["Complemento"].ToString()
+                    };
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+  
         public void Deletar(int id)
         {
             using (OleDbConnection conn = new OleDbConnection(connString))
