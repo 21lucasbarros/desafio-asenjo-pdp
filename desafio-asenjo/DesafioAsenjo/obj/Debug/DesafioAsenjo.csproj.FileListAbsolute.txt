@@ -1,0 +1,14 @@
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\bin\Debug\DesafioAsenjo.exe.config
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\bin\Debug\DesafioAsenjo.exe
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\bin\Debug\DesafioAsenjo.pdb
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\obj\Debug\DesafioAsenjo.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\obj\Debug\DesafioAsenjo.Form1.resources
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\obj\Debug\DesafioAsenjo.Properties.Resources.resources
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\obj\Debug\DesafioAsenjo.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\obj\Debug\DesafioAsenjo.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\obj\Debug\DesafioA.72BC4FA8.Up2Date
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\obj\Debug\DesafioAsenjo.exe
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\obj\Debug\DesafioAsenjo.pdb
+C:\Users\Asus\Desktop\Lucas Barros\Projetos C#\desafio-asenjo-pdp\desafio-asenjo\DesafioAsenjo\obj\Debug\DesafioAsenjo.exe.config
